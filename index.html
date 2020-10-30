@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME 03</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="class-contaner">
+        <h2>Rock, Paper, Scissor Game</h2>
+
+        <div class="box-rps" id="flex-box">
+            <img Id="scissor" src="images/11.JPG" width="150px" height="150px" onclick="rpsgame(this)">
+            <img Id="paper" src="images/22.JPG" width="150px" height="150px" onclick=" rpsgame(this)">
+            <img Id="rock" src="images/33.JPG" width="150px" height="150px" onclick="rpsgame(this)">
+
+        </div>
+
+        <button class="btn btn-success" onclick="refreshsite()">Refresh</button>
+    </div>
+
+    <div class="container" id="c4">
+        <h2 id="changeh2color">Change the color all of Button</h2>
+
+        <div class="pick-color">
+            <form action="">
+
+                <select name="seletname" id="selectid" onchange="buttoncolorchange(this)">
+                    <option value="random"> Random </option>
+                    <option value="red"> Red </option>
+                    <option value="green"> Green </option>
+                    <option value="reset"> Reset </option>
+                </select>
+
+            </form>
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2>Black Jack Challange</h2>
+        <h3><span id="black-jack-result">Let's Play</span></h3>
+
+        <div class="black-jack-row-1">
+            <div id="your-box">
+                <h2>You : <span id="your-score">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer : <span id="dealer-score">0</span></h2>
+            </div>
+        </div>
+
+        <div class="black-jack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="black-jack-hit">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="black-jack-stand">Stand</button>
+                <button class="btn-lg btn-danger mr-2" id="black-jack-deal">Deal</button>
+            </div>
+        </div>
+
+        <div class="black-jack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id=wins>0</span></td>
+                    <td><span id=losses>0</span></td>
+                    <td><span id=draws>0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="jscode.js"></script>
+</body>
+
+</html>
